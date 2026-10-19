@@ -34,15 +34,13 @@ class Solution:
         dL1 = dL1 * (z1>0) # Throiugh ReLU
         dW1 = np.array(np.outer(dL1, x))
         db1 = dL1
-        result = {
+        return {
             "loss": round(float(loss), 4),
             "dW1": np.round(dW1, 4),
             "db1": np.round(db1, 4),
             "dW2": np.round(dW2, 4),
             "db2": np.round(db2, 4)
         }
-        return result
-        
 
 
                 
