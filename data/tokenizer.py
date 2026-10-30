@@ -26,7 +26,6 @@ class Solution:
 
             sorting = [key for key, value in pairs.items() if value == pairs[next(iter(pairs))]]
             sorting.sort()
-            print(sorting)
 
             new_chars = []
             i = 0
